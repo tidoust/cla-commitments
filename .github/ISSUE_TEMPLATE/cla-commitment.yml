@@ -12,6 +12,12 @@ body:
 
         Blah blah
 
+  - type: text
+    id: repository
+    attributes:
+      label: Project repository
+      description: Set the full name of the project repository for which this CLA is being agreed upon, e.g., `w3c-oss/canivc`.
+
   - type: checkboxes
     id: acceptance
     attributes:
