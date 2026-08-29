@@ -1,8 +1,6 @@
 name: Accept Contributor Agreement
 description: Accept the repository's Contributor Agreement
 title: "[Agreement] Acceptance"
-labels:
-  - pending-agreement
 assignees: []
 body:
   - type: markdown
