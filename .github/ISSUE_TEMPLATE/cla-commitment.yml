@@ -12,7 +12,7 @@ body:
 
         Blah blah
 
-  - type: text
+  - type: input
     id: repository
     attributes:
       label: Project repository
