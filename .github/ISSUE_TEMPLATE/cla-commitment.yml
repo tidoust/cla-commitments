@@ -18,6 +18,12 @@ body:
       label: Project repository
       description: Set the full name of the project repository for which this CLA is being agreed upon, e.g., `w3c-oss/canivc`.
 
+  - type: input
+    id: pr
+    attributes:
+      label: Project repository
+      description: Set the full name of the project repository for which this CLA is being agreed upon, e.g., `w3c-oss/canivc`.
+
   - type: checkboxes
     id: acceptance
     attributes:
