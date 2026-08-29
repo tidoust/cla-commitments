@@ -10,26 +10,26 @@ body:
       value: |
         # Contributor Agreement
 
-        Blah blah
+        Blah blah CLA!
 
   - type: input
     id: repository
     attributes:
       label: Project repository
-      description: Set the full name of the project repository for which this CLA is being agreed upon, e.g., `w3c-oss/canivc`.
+      description: Full name of the project repository for which this CLA is being agreed upon, e.g., `w3c-oss/canivc`.
 
   - type: input
     id: pr
     attributes:
       label: Pull request
-      description: URL of the pull request that triggered this CLA if any, e.g., `https://github.com/w3c-oss/canivc/pull/70`
+      description: URL of the pull request for which this CLA approval is required, if any, e.g., `https://github.com/w3c-oss/canivc/pull/70`.
 
   - type: checkboxes
     id: acceptance
     attributes:
       label: Agreement acceptance
       options:
-        - label: I have read and agree to the Contributor Agreement.
+        - label: I have read and agree to the Contributor Agreement for the repository listed above.
           required: true
 
   - type: checkboxes
