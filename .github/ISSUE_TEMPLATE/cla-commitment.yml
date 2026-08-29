@@ -17,8 +17,8 @@ body:
     attributes:
       label: Project repository
       description: Full name of the project repository for which this CLA is being agreed upon, e.g., `w3c-oss/canivc`.
-      validations:
-        required: true
+    validations:
+      required: true
 
   - type: input
     id: pr
