@@ -1,8 +1,9 @@
 name: "Record approved CLA commitment"
 
 permissions:
-  # The workflow will likely update the contents of a JSON file
+  # The workflow will lock the issue and push contents in a JSON file
   contents: write
+  issues: write
 
 on:
   issues:
