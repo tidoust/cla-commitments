@@ -1,5 +1,14 @@
-# IMPORTANT: If you change section labels, check the `sectionTitle` variable in
-# src/add-cla-commitment.js and update it as needed.
+###############################################################################
+# IMPORTANT: Beware if you change section ids or labels because some need to be
+# hardcoded in scripts. In particular:
+# - check the `sectionTitle` variable in `src/add-cla-commitment.js`.
+# - check the CLA checker's code if you alter the "repository" and "pr" IDs,
+# as the checker builds on them to pre-fill the issue template on behalf of a
+# contributor.
+# - check the CLA checker's `REPOSITORY_ANCHOR` config parameter if you change
+# the label of the repository section.
+###############################################################################
+
 name: Accept Contributor Agreement
 description: Accept the repository's Contributor Agreement
 title: "Accept agreement"
