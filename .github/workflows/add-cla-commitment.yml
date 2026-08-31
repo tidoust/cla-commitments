@@ -38,7 +38,7 @@ jobs:
 
       - name: Commit updates
         run: |
-          git config user.name "CLA checker [bot]"
+          git config user.name "CLA checker bot"
           git config user.email "<>"
           git commit -m '[Agreement] ${{ github.event.issue.title }}' -m 'Close #${{ github.event.issue.number }}' -a || true
 
