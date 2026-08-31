@@ -5,10 +5,11 @@
  * contributor, the script:
  * 1. locks the issue to prevent any further update
  * 2. amends the relevant JSON file (`owner/repo.json`)
+ * 3. closes the issue if the CLA commitment already existed
  *
- * Note: The script does not commit the change and does not close the issue.
- * The change should be committed through the workflow that triggers the script
- * and the commit should close the issue through an "auto-close" command.
+ * Note: When the relevant JSON file is updated, the script does not commit the
+ * change and does not close the issue either. That's supposed to be done by
+ * the workflow that triggers the script, so that both happen at once.
  */
 import dotenv from 'dotenv';
 import { Octokit } from 'octokit';
@@ -128,6 +129,10 @@ catch (err) {
 
 if (commitments.find(c => c.id === commitment.id)) {
   console.log(`- commitment already found in ${commitmentsFile}`);
+  if (issue.state === 'open') {
+    await octokit.rest.issues.addLabels({ owner, repo, issue_number, labels: ['duplicate'] });
+    await octokit.rest.issues.update({ owner, repo, issue_number, state: 'closed' });
+  }
 }
 else {
   console.log(`- add commitment to ${commitmentsFile}`);
