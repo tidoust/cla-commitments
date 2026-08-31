@@ -40,7 +40,7 @@ jobs:
         run: |
           git config user.name "CLA checker [bot]"
           git config user.email "<>"
-          git commit -m '[Agreement] ${{ format(github.event.issue.title }}' -m 'Close #${{ github.event.issue.number }}' -a || true
+          git commit -m '[Agreement] ${{ github.event.issue.title }}' -m 'Close #${{ github.event.issue.number }}' -a || true
 
       - name: Push changes
         uses: ad-m/github-push-action@v1.3.0
