@@ -1,6 +1,8 @@
+# IMPORTANT: If you change section labels, check the `sectionTitle` variable in
+# src/add-cla-commitment.js and update it as needed.
 name: Accept Contributor Agreement
 description: Accept the repository's Contributor Agreement
-title: "[Agreement] Acceptance"
+title: "Accept agreement"
 assignees: []
 body:
   - type: markdown
