@@ -43,7 +43,7 @@ body:
     attributes:
       label: Agreement acceptance
       options:
-        - label: I have read and agree to the W3C Open Source Individual Contributor License Agreement version 0.5 (https://www.w3.org/2026/07/w3c-open-source-icla.html) for the repository listed above.
+        - label: I have read and agree to the [W3C Open Source Individual Contributor License Agreement version 0.5](https://www.w3.org/2026/07/w3c-open-source-icla.html) (`https://www.w3.org/2026/07/w3c-open-source-icla.html`) for the repository listed above.
           required: true
 
   - type: checkboxes
